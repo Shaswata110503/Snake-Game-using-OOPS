@@ -124,6 +124,7 @@ while game_is_on:
             food.hideturtle()
             screen.update()
             scoreboard.reset()
+            scoreboard.game_over()
 
 
         # Detect collision with tail
@@ -141,6 +142,7 @@ while game_is_on:
                 food.hideturtle()
                 screen.update()
                 scoreboard.reset()
+                scoreboard.game_over()
 
         # if the head collides with any segment in the tail
         # trigger game over
@@ -152,12 +154,8 @@ while game_is_on:
                 food.hideturtle()
                 screen.update()
                 scoreboard.reset()
+                scoreboard.game_over()
 
 
 
-
-
-    
-    
-        
 screen.exitonclick()

@@ -44,9 +44,6 @@ class Scoreboard(Turtle):
             self.high_score=self.score
             with open(r"C:\Users\desha\OneDrive\Desktop\MYCODE\Python\projects python\snake_game\Snake-Game-using-OOPS\data.txt",mode='w') as data:
                 data.write(f"{self.high_score}")
-
-        # After updating the High score we must reset the score 
-        self.score=0
         # then update the socreboard
         self.update_scoreboard()
 

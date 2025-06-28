@@ -2,6 +2,7 @@ from turtle import Turtle
 ALIGNMENT="center"
 FONT=("Courier",20,"bold")
 FONT_GAMEOVER=("Courier",30,"bold")
+FONT_POINT = ("Courier", 20, "bold")
 
 
 # '''The issue is with how Python interprets backslashes (\) in strings. For example:

@@ -19,12 +19,13 @@ FONT_GAMEOVER=("Courier",30,"bold")
 # '''
 
 # Adding a high Score Function to keep track the High Score
+# 
 
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score=0
-        with open(r"C:\Users\desha\OneDrive\Desktop\MYCODE\Python\projects python\snake_game\data.txt") as data:
+        with open(r"C:\Users\desha\OneDrive\Desktop\MYCODE\Python\projects python\snake_game\Snake-Game-using-OOPS\data.txt") as data:
             self.high_score=int(data.read())
         self.color('white')
         self.penup()
@@ -40,7 +41,7 @@ class Scoreboard(Turtle):
     def reset(self):
         if self.score>self.high_score:
             self.high_score=self.score
-            with open(r"C:\Users\desha\OneDrive\Desktop\MYCODE\Python\projects python\snake_game\data.txt",mode='w') as data:
+            with open(r"C:\Users\desha\OneDrive\Desktop\MYCODE\Python\projects python\snake_game\Snake-Game-using-OOPS\data.txt",mode='w') as data:
                 data.write(f"{self.high_score}")
 
         # After updating the High score we must reset the score 
